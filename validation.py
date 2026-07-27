@@ -14,7 +14,7 @@ def get_roll(student_list):
                 for student in student_list:
                     if student.roll == roll:
                         print("Student already exists")
-                        break
+                        return
                 else:
                     return roll
             else:
