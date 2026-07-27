@@ -74,7 +74,7 @@ def delete_student(student_list):
             if response == "y":
                 student_list.remove(student)
                 st.save_student(student_list)
-                print("Record delted successfully")
+                print("Record deleted successfully")
             else:
                 print("Deletion cancelled!")
 
