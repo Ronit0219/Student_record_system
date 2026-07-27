@@ -36,6 +36,7 @@ def main():
             case 6:
                 op.count_students(student_list)
             case 7:
+                st.save_student(student_list)
                 print("Exiting from the program")
                 break
 
