@@ -49,7 +49,7 @@ def get_sem():
                 return sem
             print("Please enter a valid semester")
         except ValueError:
-            print("Error! please neter an integer value")
+            print("Error! please enter an integer value")
 
 def get_sgpa():
     while True:
@@ -58,7 +58,7 @@ def get_sgpa():
             if 0 <= sgpa <= 10:
                 return sgpa
             print("Please enter a valid sgpa between 0 to 10")
-        except:
+        except ValueError:
             print("Please enter a valid value")
 
 def get_search_roll():
@@ -73,7 +73,7 @@ def get_search_roll():
 
 def delete_confirmation():
     while True:
-        response = input("Do you eant to delete the student information?\n if yeas enter y\t if no enter n\n").strip().lower()
+        response = input("Do you want to delete the student information?\n if yeas enter y\t if no enter n\n").strip().lower()
         if response in ("y", "n"):
             return response
         print("Please enter a valid choice")
