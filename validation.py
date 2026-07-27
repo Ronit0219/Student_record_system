@@ -73,7 +73,7 @@ def get_search_roll():
 
 def delete_confirmation():
     while True:
-        response = input("Do you want to delete the student information?\n if yeas enter y\t if no enter n\n").strip().lower()
+        response = input("Do you want to delete the student information?\n if yes enter y\t if no enter n\n").strip().lower()
         if response in ("y", "n"):
             return response
         print("Please enter a valid choice")
