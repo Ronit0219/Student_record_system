@@ -27,6 +27,6 @@ def load_student():
                 student_list.append(new_student)
             return student_list
     except FileNotFoundError:
-        return[]
+        return []
     except json.JSONDecodeError:
         return [] 
